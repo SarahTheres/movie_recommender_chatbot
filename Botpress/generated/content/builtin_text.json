@@ -1,0 +1,786 @@
+[
+  {
+    "id": "builtin_text-pSsHWg",
+    "formData": {
+      "text": "Hallo {{state.name}}, freut mich dich kennenzulernen!",
+      "variations": [],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:57:36.026Z"
+  },
+  {
+    "id": "builtin_text-AY5SSW",
+    "formData": {
+      "text": "This is the first time we speak 🤖",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T00:59:51.118Z"
+  },
+  {
+    "id": "builtin_text-bFsOmf",
+    "formData": {
+      "text": "We already spoke {{state.$r}} times!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:00:37.593Z"
+  },
+  {
+    "id": "builtin_text-TtzrCV",
+    "formData": {
+      "text": "Alright, I have forgotten your name.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:06:41.963Z"
+  },
+  {
+    "id": "builtin_text-z0J9qh",
+    "formData": {
+      "text": "May I know your name please?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:08:41.241Z"
+  },
+  {
+    "id": "builtin_text-X069Le",
+    "formData": {
+      "text": "Try saying something like \"forget my name\"!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:16:53.227Z"
+  },
+  {
+    "id": "builtin_text-kKQ8C3",
+    "formData": {
+      "text": "(To see how this works, double-click anywhere on the flow and go to the \"Transitions\" panel)",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-05-14T01:17:55.317Z"
+  },
+  {
+    "id": "builtin_text-oGe9wU",
+    "formData": {
+      "text": "Hallo, mein Name ist Alina und ich bin hier, um dir deine Fragen zu beantworten und dir so gut wie möglich zu helfen 😊 Stelle dich dazu gerne erst mit deinem Namen vor.\nz. B. Hallo, ich bin Anna.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T08:57:51.911Z"
+  },
+  {
+    "id": "builtin_text-xwjpK8",
+    "formData": {
+      "text": "Sehr cool! Dieses Genre mag ich persönlich auch echt gerne ☺️Hast du heute auch Lust auf dieses Genre?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T09:08:13.808Z"
+  },
+  {
+    "id": "builtin_text-y2o0CN",
+    "formData": {
+      "text": "Wie viel Zeit hast du denn gerade? Eher viel oder wenig?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:00:32.819Z"
+  },
+  {
+    "id": "builtin_text-8gglPj",
+    "formData": {
+      "text": "Welches Genre wäre das?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:00:59.238Z"
+  },
+  {
+    "id": "builtin_text-l4gi9E",
+    "formData": {
+      "text": "Ich habe dich leider nicht verstanden...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:01:20.923Z"
+  },
+  {
+    "id": "builtin_text-Rl6lUH",
+    "formData": {
+      "text": "Meine Letzte Frage wäre dann noch: Schaust du allein oder zusammen mit Freunden oder Familie?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:16:36.844Z"
+  },
+  {
+    "id": "builtin_text-HlugPS",
+    "formData": {
+      "text": "Leider kann ich dir nur Filme vorschlagen...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:18:03.747Z"
+  },
+  {
+    "id": "builtin_text-~ey1of",
+    "formData": {
+      "text": "({{state.genre}}) Ein weiterer Filmvorschlag wäre {{state.title}}. Hier eine kurze Zusammenfassung:  {{state.summary}}.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:40:57.191Z"
+  },
+  {
+    "id": "builtin_text-vWnpBz",
+    "formData": {
+      "text": "(alleine) Ein Filmvorschlag wäre xxx. In diesem Film gehts es um xxx.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:41:31.367Z"
+  },
+  {
+    "id": "builtin_text-zyXPzV",
+    "formData": {
+      "text": "Super! Freut mich sehr, dass er dir gefällt! ☺️ Ich hoffe du wirst viel Spaß haben und wir werden uns bald wieder\nsehen! Es hat mir Spaß gemacht für dich den perfekten Film zu finden 😚",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:56:58.695Z"
+  },
+  {
+    "id": "builtin_text-g7qw5q",
+    "formData": {
+      "text": "Natürlich habe ich noch andere Vorschläge 😊 Ich denke \"{{state.title}}\" ist auch ein guter Film und könnte dir gefallen. Hier eine kurze Zusammenfassung:  {{state.summary}}\nGefällt dir dieser? Falls nicht, suche ich gerne nach weiteren Filmen für dich!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T10:57:40.106Z"
+  },
+  {
+    "id": "builtin_text-z0qmFe",
+    "formData": {
+      "text": "Leider kann ich dir nur Filme vorschlagen...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T13:23:58.850Z"
+  },
+  {
+    "id": "builtin_text-PaFzEZ",
+    "formData": {
+      "text": "Ich habe dich leider nicht verstanden...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T13:29:29.321Z"
+  },
+  {
+    "id": "builtin_text-tGQTwR",
+    "formData": {
+      "text": "Ich habe dich leider nicht verstanden...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T13:30:22.933Z"
+  },
+  {
+    "id": "builtin_text-rqmEb3",
+    "formData": {
+      "text": "Ich habe dich leider nicht verstanden...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T13:33:04.645Z"
+  },
+  {
+    "id": "builtin_text-2rQhiG",
+    "formData": {
+      "text": "Genre",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T17:27:46.689Z"
+  },
+  {
+    "id": "builtin_text-Ad7pqE",
+    "formData": {
+      "text": "Ein Filmvorschlag wäre xxx. In diesem Film gehts es um xxx.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-14T10:10:22.441Z"
+  },
+  {
+    "id": "builtin_text-lY4vVT",
+    "formData": {
+      "text": "Dann hätte ich da zum Beispiel \"{{state.title}}\" im Angebot. Ich bin mir sicher, dass dir der Film gefallen würde. Hier eine kurze Zusammenfassung: {{state.summary}}\nGefällt dir der Film? 😊Falls nicht, suche ich gerne nach weiteren Filmen für dich!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-14T10:10:57.030Z"
+  },
+  {
+    "id": "builtin_text-eIl71t",
+    "formData": {
+      "text": "Ich habe dich leider nicht verstanden...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T09:14:03.222Z"
+  },
+  {
+    "id": "builtin_text-n3ijX6",
+    "formData": {
+      "text": "Stelle dich gerne erst mit deinem Namen vor: \nz. B. Hallo, ich heiße Anna.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T09:17:41.748Z"
+  },
+  {
+    "id": "builtin_text-HFoHYM",
+    "formData": {
+      "text": "Hi, {{state[\\'skill-choice-ret\\']}}",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T09:50:50.459Z"
+  },
+  {
+    "id": "builtin_text-T~moml",
+    "formData": {
+      "text": "Sehr schön 😊 Dann erzähle mir doch wie dein Tag heute war, wie du dich gerade fühlst oder wie du dich fühlen willst.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T10:16:13.630Z"
+  },
+  {
+    "id": "builtin_text-bqegsT",
+    "formData": {
+      "text": "Erzähle mir doch wie dein Tag heute war und wie du dich gerade fühlst.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T10:16:23.572Z"
+  },
+  {
+    "id": "builtin_text-5bhfM_",
+    "formData": {
+      "text": "Ich bin schon sehr auf deine Fragen gespannt ☺️Wie kann ich dir heute helfen?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T10:26:30.780Z"
+  },
+  {
+    "id": "builtin_text-h4XfAb",
+    "formData": {
+      "text": "Weißt du schon auf was du dann Lust hast?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T14:00:48.793Z"
+  },
+  {
+    "id": "builtin_text-J1q2Tp",
+    "formData": {
+      "text": "Sehr cool! Dieses Genre mag ich persönlich auch echt gerne ☺️Hast du heute auch Lust auf dieses Genre? ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-19T09:10:08.815Z"
+  },
+  {
+    "id": "builtin_text-6atz0~",
+    "formData": {
+      "text": "Das waren leider alle Filme, die ich dir vorschlagen konnte... Beim nächsten Mal ist hoffentlich ein guter Film für dich dabei 😚",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-21T13:03:35.169Z"
+  },
+  {
+    "id": "builtin_text-xmkpF~",
+    "formData": {
+      "text": "main_1",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T08:11:20.790Z"
+  },
+  {
+    "id": "builtin_text-Qp0CvS",
+    "formData": {
+      "text": "Okay, dann lass uns gemeinsam einen tollen Film raussuchen, den du anschauen könntest 😊",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T08:39:03.529Z"
+  },
+  {
+    "id": "builtin_text-3e7zqE",
+    "formData": {
+      "text": "Super!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T08:41:07.900Z"
+  },
+  {
+    "id": "builtin_text-oPspy9",
+    "formData": {
+      "text": "Okay, dann werde ich dir einen Film vorschlagen 😊",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T09:08:19.421Z"
+  },
+  {
+    "id": "builtin_text-oeGVEN",
+    "formData": {
+      "text": "Sehr schön 😊",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T09:08:49.287Z"
+  },
+  {
+    "id": "builtin_text-ElzaOm",
+    "formData": {
+      "text": "DISAGREEABLE\n",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T09:37:05.491Z"
+  },
+  {
+    "id": "builtin_text-zBSWyf",
+    "formData": {
+      "text": "NEUTRAL",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T09:44:30.841Z"
+  },
+  {
+    "id": "builtin_text-RDnc4m",
+    "formData": {
+      "text": "AGREEABLE",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-30T09:44:56.872Z"
+  },
+  {
+    "id": "builtin_text-e~iSNg",
+    "formData": {
+      "text": "Schade, dann vielleicht beim nächsten Mal! Ich freue mich schon auf dich 😚",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T12:37:44.362Z"
+  },
+  {
+    "id": "builtin_text-N2XPOH",
+    "formData": {
+      "text": "Hallo, mein Name ist Christina und ich werde dir hier deine Fragen beantworten. Stelle dich dazu erst mit deinem Namen vor.\nz. B. Hallo, ich bin Anna.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:06:11.315Z"
+  },
+  {
+    "id": "builtin_text-cff43h",
+    "formData": {
+      "text": "Hallo {{state.name}}!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:07:18.314Z"
+  },
+  {
+    "id": "builtin_text-FNuaTn",
+    "formData": {
+      "text": "Wie lautet deine Frage?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:09:37.010Z"
+  },
+  {
+    "id": "builtin_text-Glp9oK",
+    "formData": {
+      "text": "Dann werde ich dir dazu erst ein paar Fragen stellen:",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:10:55.532Z"
+  },
+  {
+    "id": "builtin_text-Eyrryj",
+    "formData": {
+      "text": "Okay, dann lass uns einen Film raussuchen, den du anschauen könntest.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:12:12.874Z"
+  },
+  {
+    "id": "builtin_text-5p1ZSz",
+    "formData": {
+      "text": "Hast du heute auch Lust auf dieses Genre?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:12:58.743Z"
+  },
+  {
+    "id": "builtin_text-9IlK0t",
+    "formData": {
+      "text": "Wie ist denn deine heutige Stimmung? Wie war dein Tag und wie fühlst du dich?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:14:08.459Z"
+  },
+  {
+    "id": "builtin_text-FbmgDh",
+    "formData": {
+      "text": "Okay, dann werde ich dir einen passenden Film vorschlagen.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:14:48.184Z"
+  },
+  {
+    "id": "builtin_text-Mj8brC",
+    "formData": {
+      "text": "Meine Letzte Frage wäre dann noch: Schaust du allein oder zusammen mit anderen?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:15:28.557Z"
+  },
+  {
+    "id": "builtin_text-9dEcSH",
+    "formData": {
+      "text": " Schade, dann vielleicht beim nächsten Mal!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:16:35.973Z"
+  },
+  {
+    "id": "builtin_text-QQFCwZ",
+    "formData": {
+      "text": "Ein Filmvorschlag wäre \"{{state.title}}\". Hier eine kurze Zusammenfassung: {{state.summary}} Gefällt dir der Film? Falls nicht, kann ich nach weiteren Filmen suchen.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:17:54.950Z"
+  },
+  {
+    "id": "builtin_text-Qc~lJ8",
+    "formData": {
+      "text": "Das waren leider alle Filme, die ich dir vorschlagen konnte... Beim nächsten Mal ist hoffentlich ein interessanter Film für dich dabei.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:18:39.897Z"
+  },
+  {
+    "id": "builtin_text-nCANRr",
+    "formData": {
+      "text": "Ein weiterer Filmvorschlag wäre \"{{state.title}}\". Hier eine kurze Zusammenfassung: {{state.summary}} Gefällt dir dieser? Falls nicht, suche ich nach weiteren Filmen für dich!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:19:21.208Z"
+  },
+  {
+    "id": "builtin_text-BA5ak1",
+    "formData": {
+      "text": "Viel Spaß und bis zum nächsten Mal!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:23:58.242Z"
+  },
+  {
+    "id": "builtin_text-qbkXbS",
+    "formData": {
+      "text": "A, B oder  C?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:31:41.743Z"
+  },
+  {
+    "id": "builtin_text-24QC0K",
+    "formData": {
+      "text": "Hallo, mein Name ist Beatrice und ich kenne mich hier gut aus. Also kannst du mir deine Fragen stellen. Stelle dich dazu erst mit deinem Namen vor.\nz. B. Hallo, ich bin Anna.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:52:31.253Z"
+  },
+  {
+    "id": "builtin_text-3Rzjol",
+    "formData": {
+      "text": "Ich habe dich nicht verstanden...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:52:54.676Z"
+  },
+  {
+    "id": "builtin_text-irq7Xe",
+    "formData": {
+      "text": "Du sollst dich erst mit deinem Namen vorstellen,\nz. B. Hallo, ich heiße Anna.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:53:40.428Z"
+  },
+  {
+    "id": "builtin_text-2XqJ5F",
+    "formData": {
+      "text": "Hallo {{state.name}}. ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:54:20.917Z"
+  },
+  {
+    "id": "builtin_text-K4oWzD",
+    "formData": {
+      "text": "Ich kann dir nur Filme vorschlagen...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:54:43.067Z"
+  },
+  {
+    "id": "builtin_text-TefCsm",
+    "formData": {
+      "text": "Stelle mir jetzt deine Frage.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:55:42.370Z"
+  },
+  {
+    "id": "builtin_text-V9CS_u",
+    "formData": {
+      "text": "Ich hasse diese Art von Fragen, denn wie du weißt, gibt es auch Filmvorschläge auf deiner Startseite. ",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:56:27.436Z"
+  },
+  {
+    "id": "builtin_text-Dh_vY_",
+    "formData": {
+      "text": "Okay. Dann mach ich dir einen Filmvorschlag, auch wenn ich das eigentlich langweilig finde.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:57:43.509Z"
+  },
+  {
+    "id": "builtin_text-bFqSez",
+    "formData": {
+      "text": "Du hast aber einen schlechten Geschmack. Hast du heute auch Lust auf das Genre?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:09:50.654Z"
+  },
+  {
+    "id": "builtin_text-7Zn9Pa",
+    "formData": {
+      "text": "Ich verstehe dich nicht, du solltest dir wirklich mehr Gedanken machen, bevor du mich fragst. Aber naja...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:13:02.876Z"
+  },
+  {
+    "id": "builtin_text-urnUMe",
+    "formData": {
+      "text": "Okay, dann suche ich halt nach einem kurzen Film...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:16:48.098Z"
+  },
+  {
+    "id": "builtin_text-KYfLI5",
+    "formData": {
+      "text": "Okay, dann werde ich dir einen Film vorschlagen.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:17:34.403Z"
+  },
+  {
+    "id": "builtin_text-W9ZALq",
+    "formData": {
+      "text": "Schaust du alleine oder mit anderen Leuten?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:19:49.026Z"
+  },
+  {
+    "id": "builtin_text-Qafzds",
+    "formData": {
+      "text": "Okay, selber Schuld. Jetzt muss ich wenigstens nicht mehr mit dir reden. Tschüss!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:22:48.835Z"
+  },
+  {
+    "id": "builtin_text-At4e7S",
+    "formData": {
+      "text": "Ja, du solltest dich wirklich bei mir bedanken. Tschüss.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:24:36.033Z"
+  },
+  {
+    "id": "builtin_text-1Ut2_F",
+    "formData": {
+      "text": "Langsam werde ich wütend. Zuerst weißt du nicht was du anschauen willst und dann gefällt dir mein Vorschlag nicht? Was ist das für ein Mist? Schau dir einfach diesen Film an: \"{{state.title}}\". Hier die Zusammenfassung: {{state.summary}} Besser?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:25:34.903Z"
+  },
+  {
+    "id": "builtin_text-xMBu9A",
+    "formData": {
+      "text": "Also, mein Vorschlag wäre \"{{state.title}}\". Hier eine kurze Zusammenfassung: {{state.summary}} Das Genre stimmt zwar vielleicht nicht mit deinem Lieblingsgenre überein, aber dann schaust du wenigstens mal einen Film, der nicht so langweilig ist. Passt dir der Film?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:27:14.198Z"
+  },
+  {
+    "id": "builtin_text-Y3vG1F",
+    "formData": {
+      "text": "Das waren alle Filme, die ich dir vorschlagen konnte. Selber Schuld, wenn dir keiner davon gefällt. Hast eben einen schlechten Geschmack...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T23:25:16.367Z"
+  },
+  {
+    "id": "builtin_text-xYdFZo",
+    "formData": {
+      "text": "Dann werde ich nach einem kürzeren Film für dich suchen 😊",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-14T16:23:09.198Z"
+  },
+  {
+    "id": "builtin_text-tVlHcv",
+    "formData": {
+      "text": "Okay, dann werde ich nach einem kürzeren Film suchen.",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-14T16:30:06.429Z"
+  },
+  {
+    "id": "builtin_text-Y2U_TY",
+    "formData": {
+      "text": "Haha, hast wohl keine Freunde!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-16T17:00:55.621Z"
+  },
+  {
+    "id": "builtin_text-c2qbz1",
+    "formData": {
+      "text": "Jetzt werd nicht frech! Lass uns einfach weiter machen...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-16T17:13:05.399Z"
+  },
+  {
+    "id": "builtin_text-RU5teJ",
+    "formData": {
+      "text": "Das freut mich 😊",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-17T10:11:04.062Z"
+  },
+  {
+    "id": "builtin_text-70wvO~",
+    "formData": {
+      "text": "Das tut mir Leid... Ich hoffe nach dem Film wirst du dich besser fühlen 😊",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-17T10:12:29.266Z"
+  },
+  {
+    "id": "builtin_text-2RLE2b",
+    "formData": {
+      "text": "Cool!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-17T10:52:17.664Z"
+  },
+  {
+    "id": "builtin_text-RRLdfB",
+    "formData": {
+      "text": "Hm, schade...",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-17T10:52:41.921Z"
+  },
+  {
+    "id": "builtin_text-7gQSP3",
+    "formData": {
+      "text": "Also, hast du heute auch Lust auf das Genre?",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-17T17:24:29.053Z"
+  },
+  {
+    "id": "builtin_text-JnGzjZ",
+    "formData": {
+      "text": "Ich habe leider keinen passenden Film für dich gefunden... Ich hoffe beim nächsten Mal ist etwas für dich dabei! Ich wünsche dir noch einen schönen Tag! 😚",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-20T18:45:31.626Z"
+  },
+  {
+    "id": "builtin_text-kCYItJ",
+    "formData": {
+      "text": "Ich habe leider keinen passenden Film gefunden... Vielleicht beim nächsten Mal!",
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-20T18:55:58.106Z"
+  }
+]

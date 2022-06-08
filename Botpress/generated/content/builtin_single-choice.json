@@ -1,0 +1,441 @@
+[
+  {
+    "id": "builtin_single-choice-V5a7fn",
+    "formData": {
+      "text": "Ich bin mir sicher, dass wir zusammen etwas passendes für dich finden werden. Um deinen Filmgeschmack besser kennenzulernen, kannst du mir jetzt gerne sagen, welches Genre du am liebsten magst oder zuletzt gesehen hast.",
+      "choices": [
+        {
+          "title": "Action",
+          "value": "action"
+        },
+        {
+          "title": "Doku",
+          "value": "doku"
+        },
+        {
+          "title": "Drama",
+          "value": "drama"
+        },
+        {
+          "title": "Fantasy",
+          "value": "fantasy"
+        },
+        {
+          "title": "Horror",
+          "value": "horror"
+        },
+        {
+          "title": "Kinderfilm",
+          "value": "kinder"
+        },
+        {
+          "title": "Komödie",
+          "value": "komödie"
+        },
+        {
+          "title": "Krimi",
+          "value": "krimi"
+        },
+        {
+          "title": "Liebesfilm",
+          "value": "liebe"
+        },
+        {
+          "title": "Science-Fiction",
+          "value": "scifi"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T09:01:31.631Z"
+  },
+  {
+    "id": "builtin_single-choice-aCkRQU",
+    "formData": {
+      "choices": [
+        {
+          "title": "Doku",
+          "value": "doku"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-12T09:09:06.759Z"
+  },
+  {
+    "id": "builtin_single-choice-szL~Mz",
+    "formData": {
+      "text": "Genre?",
+      "choices": [
+        {
+          "title": "Action",
+          "value": "action"
+        },
+        {
+          "title": "Doku",
+          "value": "doku"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T16:56:42.392Z"
+  },
+  {
+    "id": "builtin_single-choice-hN2Efh",
+    "formData": {
+      "choices": [
+        {
+          "title": "Doku",
+          "value": "doku"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T16:58:55.309Z"
+  },
+  {
+    "id": "builtin_single-choice-yMFcaE",
+    "formData": {
+      "choices": [
+        {
+          "title": "lalal",
+          "value": "lalal"
+        },
+        {
+          "title": "lele",
+          "value": "lele"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T16:59:43.449Z"
+  },
+  {
+    "id": "builtin_single-choice-ORTknq",
+    "formData": {
+      "choices": [
+        {
+          "title": "Action",
+          "value": "action"
+        },
+        {
+          "title": "kinder",
+          "value": "kinder"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-13T17:08:40.994Z"
+  },
+  {
+    "id": "builtin_single-choice-5KWkhP",
+    "formData": {
+      "text": "Weißt du auf was du dann Lust hast?",
+      "choices": [
+        {
+          "title": "Ja!!! 🙃",
+          "value": "yes"
+        },
+        {
+          "title": "Nein, leider nicht 😰",
+          "value": "no"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-17T09:40:54.125Z"
+  },
+  {
+    "id": "builtin_single-choice-TaBzZ~",
+    "formData": {
+      "text": "Welches Genre wäre das?",
+      "choices": [
+        {
+          "title": "Action",
+          "value": "action"
+        },
+        {
+          "title": "Doku",
+          "value": "doku"
+        },
+        {
+          "title": "Drama",
+          "value": "drama"
+        },
+        {
+          "title": "Fantasy",
+          "value": "fantasy"
+        },
+        {
+          "title": "Horror",
+          "value": "horror"
+        },
+        {
+          "title": "Kinderfilm",
+          "value": "kinder"
+        },
+        {
+          "title": "Komödie",
+          "value": "komödie"
+        },
+        {
+          "title": "Krimi",
+          "value": "krimi"
+        },
+        {
+          "title": "Liebesfilm",
+          "value": "liebe"
+        },
+        {
+          "title": "Science-Fiction",
+          "value": "scifi"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-10-19T10:16:48.419Z"
+  },
+  {
+    "id": "builtin_single-choice-Xv00Ab",
+    "formData": {
+      "text": "Möchtest du trotzdem, dass ich dir einen vorschlage? ",
+      "choices": [
+        {
+          "title": "Ja, gerne 😊",
+          "value": "ja"
+        },
+        {
+          "title": "Nee, eigentlich nicht..",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T12:35:59.318Z"
+  },
+  {
+    "id": "builtin_single-choice-wqiEWX",
+    "formData": {
+      "text": "Gut! Welches der Genres magst du, bzw. hast du zuletzt gesehen?",
+      "choices": [
+        {
+          "title": "Action",
+          "value": "action"
+        },
+        {
+          "title": "Doku",
+          "value": "doku"
+        },
+        {
+          "title": "Drama",
+          "value": "drama"
+        },
+        {
+          "title": "Fantasy",
+          "value": "fantasy"
+        },
+        {
+          "title": "Horror",
+          "value": "horror"
+        },
+        {
+          "title": "Kinderfilm",
+          "value": "kinder"
+        },
+        {
+          "title": "Komödie",
+          "value": "komödie"
+        },
+        {
+          "title": "Krimi",
+          "value": "krimi"
+        },
+        {
+          "title": "Liebesfilm",
+          "value": "liebe"
+        },
+        {
+          "title": "Science-Fiction",
+          "value": "scifi"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:22:18.307Z"
+  },
+  {
+    "id": "builtin_single-choice-mhx2Lv",
+    "formData": {
+      "text": "Weißt du auf was du dann Lust hast?",
+      "choices": [
+        {
+          "title": "Ja",
+          "value": "ja"
+        },
+        {
+          "title": "Nein",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T13:51:02.258Z"
+  },
+  {
+    "id": "builtin_single-choice-002EMT",
+    "formData": {
+      "text": "Okay, sag mir einfach welches Genre du magst.",
+      "choices": [
+        {
+          "title": "Action",
+          "value": "action"
+        },
+        {
+          "title": "Doku",
+          "value": "doku"
+        },
+        {
+          "title": "Drama",
+          "value": "drama"
+        },
+        {
+          "title": "Fantasy",
+          "value": "fantasy"
+        },
+        {
+          "title": "Horror",
+          "value": "horror"
+        },
+        {
+          "title": "Kinderfilm",
+          "value": "kinder"
+        },
+        {
+          "title": "Komödie",
+          "value": "komödie"
+        },
+        {
+          "title": "Krimi",
+          "value": "krimi"
+        },
+        {
+          "title": "Liebesfilm",
+          "value": "liebe"
+        },
+        {
+          "title": "Science-Fiction",
+          "value": "scifi"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T14:59:18.348Z"
+  },
+  {
+    "id": "builtin_single-choice-WyhYho",
+    "formData": {
+      "text": "Weißt du wenigstens auf was du dann Lust hast?",
+      "choices": [
+        {
+          "title": "Ja",
+          "value": "ja"
+        },
+        {
+          "title": "Nein",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:11:56.956Z"
+  },
+  {
+    "id": "builtin_single-choice-BMO8D~",
+    "formData": {
+      "text": "Soll ich dir dann trotzdem einen Film vorschlagen oder nicht?",
+      "choices": [
+        {
+          "title": "Ja",
+          "value": "ja"
+        },
+        {
+          "title": "Nein",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-07T15:21:19.632Z"
+  },
+  {
+    "id": "builtin_single-choice-Gkea3K",
+    "formData": {
+      "text": "Möchtest du, dass ich dir einen Filmvorschlag mache? ☺️",
+      "choices": [
+        {
+          "title": "Ja, sehr gerne! 🙃",
+          "value": "ja"
+        },
+        {
+          "title": "Nein danke...",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-14T15:42:53.605Z"
+  },
+  {
+    "id": "builtin_single-choice-FCAoyy",
+    "formData": {
+      "text": "Soll ich dir jetzt einen Filmvorschlag machen?",
+      "choices": [
+        {
+          "title": "Ja, sehr gerne! 🙃",
+          "value": "ja"
+        },
+        {
+          "title": "Nein danke...",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-14T15:47:24.803Z"
+  },
+  {
+    "id": "builtin_single-choice-4J32SM",
+    "formData": {
+      "text": "Bist du auf der Suche nach einem guten Film?",
+      "choices": [
+        {
+          "title": "Ja! 🙃",
+          "value": "ja"
+        },
+        {
+          "title": "Nein...",
+          "value": "nein"
+        }
+      ],
+      "typing": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2018-11-14T15:52:44.641Z"
+  }
+]

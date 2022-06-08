@@ -1,0 +1,92 @@
+{
+  "version": "0.1",
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-5KWkhP",
+    "keywords": {
+      "this_genre": [
+        "this_genre",
+        "Ja, ich habe Lust auf dieses Genre."
+      ],
+      "other_genre": [
+        "other_genre",
+        "Nein, heute würde ich gerne einen etwas anderen Film sehen"
+      ],
+      "yes": [
+        "yes",
+        "Ja!!! 🙃"
+      ],
+      "no": [
+        "no",
+        "Nein, leider nicht 😰"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-5KWkhP {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "747269",
+      "onReceive": null
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-5KWkhP\",\"keywords\":{\"this_genre\":[\"this_genre\",\"Ja, ich habe Lust auf dieses Genre.\"],\"other_genre\":[\"other_genre\",\"Nein, heute würde ich gerne einen etwas anderen Film sehen\"],\"yes\":[\"yes\",\"Ja!!! 🙃\"],\"no\":[\"no\",\"Nein, leider nicht 😰\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "id": "895805",
+      "onEnter": []
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "__skill-choice-invalid-inc"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-invalid-count'] <= 3",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "898264",
+      "onReceive": null
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-5KWkhP {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "914309",
+      "onReceive": null
+    }
+  ]
+}

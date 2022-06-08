@@ -1,0 +1,40 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.is('forget')",
+        "node": "forget-my-name"
+      }
+    ]
+  },
+  "startNode": "choose-flow",
+  "nodes": [
+    {
+      "id": "3fd1a58bf4",
+      "name": "choose-flow",
+      "next": [
+        {
+          "condition": "event. text == \"A\"",
+          "node": "agreeable.flow.json"
+        },
+        {
+          "condition": "event.text == \"B\"",
+          "node": "disagreeable.flow.json"
+        },
+        {
+          "condition": "event.text == \"C\"",
+          "node": "neutral.flow.json"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-qbkXbS"
+      ],
+      "onReceive": [
+        "setBotVersion {\"version\":\"version\",\"value\":\"{{event.text}}\"}",
+        "getBotVersion {\"version\":\"version\",\"into\":\"$r\"}"
+      ]
+    }
+  ]
+}

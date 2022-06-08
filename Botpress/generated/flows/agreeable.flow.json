@@ -1,0 +1,1016 @@
+{
+  "version": "0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": [
+      {
+        "condition": "event.nlu.intent.is('forget')",
+        "node": "forget-my-name"
+      }
+    ]
+  },
+  "startNode": "start-copy",
+  "nodes": [
+    {
+      "id": "b6718dd5a0",
+      "name": "welcome",
+      "onEnter": [
+        "say #!builtin_text-pSsHWg"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_vorschlag"
+        }
+      ]
+    },
+    {
+      "id": "f34ba8daa2",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "ask-genre",
+      "flow": "skills/choice-55ee05.flow.json",
+      "next": [
+        {
+          "caption": "User picked [action]",
+          "condition": "state['skill-choice-ret'] == \"action\"",
+          "node": "set_genre_ac"
+        },
+        {
+          "caption": "User picked [doku]",
+          "condition": "state['skill-choice-ret'] == \"doku\"",
+          "node": "set_genre_dk"
+        },
+        {
+          "caption": "User picked [drama]",
+          "condition": "state['skill-choice-ret'] == \"drama\"",
+          "node": "set_genre_dr"
+        },
+        {
+          "caption": "User picked [fantasy]",
+          "condition": "state['skill-choice-ret'] == \"fantasy\"",
+          "node": "set_genre_fn"
+        },
+        {
+          "caption": "User picked [horror]",
+          "condition": "state['skill-choice-ret'] == \"horror\"",
+          "node": "set_genre_hr"
+        },
+        {
+          "caption": "User picked [kinder]",
+          "condition": "state['skill-choice-ret'] == \"kinder\"",
+          "node": "set_genre_kn"
+        },
+        {
+          "caption": "User picked [komödie]",
+          "condition": "state['skill-choice-ret'] == \"komödie\"",
+          "node": "set_genre_km"
+        },
+        {
+          "caption": "User picked [krimi]",
+          "condition": "state['skill-choice-ret'] == \"krimi\"",
+          "node": "set_genre_kr"
+        },
+        {
+          "caption": "User picked [liebe]",
+          "condition": "state['skill-choice-ret'] == \"liebe\"",
+          "node": "set_genre_li"
+        },
+        {
+          "caption": "User picked [scifi]",
+          "condition": "state['skill-choice-ret'] == \"scifi\"",
+          "node": "set_genre_sc"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "0d44f54661",
+      "name": "genre-today",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('nogenre')",
+          "node": "picked_genre"
+        },
+        {
+          "condition": "event.nlu.intent.is('yes')",
+          "node": "no-genre"
+        },
+        {
+          "condition": "event.nlu.intent.is('no_idea')",
+          "node": "setGenre"
+        },
+        {
+          "condition": "true",
+          "node": "yes_or_no"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-J1q2Tp"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "54d209bf01",
+      "name": "fail_like_film2",
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-l4gi9E"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "6fab7021fe",
+      "name": "like_film",
+      "next": [
+        {
+          "condition": "true",
+          "node": "endBot"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-zyXPzV"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "2b75d384c9",
+      "name": "start-copy",
+      "next": [
+        {
+          "condition": "state.name == \"xxx\"",
+          "node": "format"
+        },
+        {
+          "condition": "true",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-oGe9wU"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"name\",\"value\":\"{{event.text}}\"}",
+        "getUserTag {\"name\":\"name\",\"into\":\"$r\"}"
+      ]
+    },
+    {
+      "id": "8659158335",
+      "name": "ask-me-film",
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_vorschlag"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-z0qmFe"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2bd0442a4e",
+      "name": "fail_time",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-PaFzEZ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ba9eeb6b47",
+      "name": "fail_people",
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_others"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-tGQTwR"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a98adf9f82",
+      "name": "fail_like_film",
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_1"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-rqmEb3"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "0e79c12e76",
+      "name": "format",
+      "next": [
+        {
+          "condition": "true",
+          "node": "loop_start"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-eIl71t"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "5fd10a744b",
+      "name": "loop_start",
+      "next": [
+        {
+          "condition": "state.name == \"xxx\"",
+          "node": "format"
+        },
+        {
+          "condition": "true",
+          "node": "welcome"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-n3ijX6"
+      ],
+      "onReceive": [
+        "setUserTag {\"name\":\"name\",\"value\":\"{{event.text}}\"}",
+        "getUserTag {\"name\":\"name\",\"into\":\"$r\"}"
+      ]
+    },
+    {
+      "id": "61dace540b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "picked_genre",
+      "flow": "skills/choice-83b13d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "state['skill-choice-ret'] == \"yes\"",
+          "node": "genre_now"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "state['skill-choice-ret'] == \"no\"",
+          "node": "setGenre"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "6d9cf7ad51",
+      "name": "set_genre_ac",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"action\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "3fea246fa3",
+      "name": "set_genre_dk",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"doku\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2285c2fd90",
+      "name": "set_genre_dr",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"drama\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "02d5e50dac",
+      "name": "set_genre_fn",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"fantasy\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "c992c2e73c",
+      "name": "set_genre_hr",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"horror\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "b1d58fd272",
+      "name": "set_genre_kn",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"kinder\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a0e76e3c83",
+      "name": "set_genre_km",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"komödie\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "121e8b49af",
+      "name": "set_genre_kr",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"krimi\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "1b99b21eb3",
+      "name": "set_genre_li",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"liebe\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "159883bdeb",
+      "name": "set_genre_sc",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"scifi\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7755c438a9",
+      "name": "get_other_film",
+      "next": [
+        {
+          "condition": "state.noFilm == true",
+          "node": "last_film"
+        },
+        {
+          "condition": "true",
+          "node": "film_2"
+        }
+      ],
+      "onEnter": [
+        "getFilm {\"title\":\"title\",\"summary\":\"summary\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "053364c169",
+      "name": "setGenre",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"noGenre\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "29ddc9a98c",
+      "name": "set_genre_ac-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"action\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "b806ece6ed",
+      "name": "set_genre_dk-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"doku\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "c5806a5688",
+      "name": "set_genre_dr-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"drama\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "2c2c87ea57",
+      "name": "set_genre_fn-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"fantasy\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "6c753eec90",
+      "name": "set_genre_hr-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"horror\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "497b02f833",
+      "name": "set_genre_kn-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"kinder\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "15e89b9a41",
+      "name": "set_genre_km-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"komödie\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "d224dc57ad",
+      "name": "set_genre_li-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"liebe\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7e34f92504",
+      "name": "set_genre_kr-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"krimi\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "ef0fe3d8e3",
+      "name": "set_genre_sc-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "no-genre"
+        }
+      ],
+      "onEnter": [
+        "setGenre {\"genre\":\"genre\",\"value\":\"scifi\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "7e7caebf66",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "genre_now",
+      "flow": "skills/choice-b1d3b3.flow.json",
+      "next": [
+        {
+          "caption": "User picked [action]",
+          "condition": "state['skill-choice-ret'] == \"action\"",
+          "node": "set_genre_ac-copy"
+        },
+        {
+          "caption": "User picked [doku]",
+          "condition": "state['skill-choice-ret'] == \"doku\"",
+          "node": "set_genre_dk-copy"
+        },
+        {
+          "caption": "User picked [drama]",
+          "condition": "state['skill-choice-ret'] == \"drama\"",
+          "node": "set_genre_dr-copy"
+        },
+        {
+          "caption": "User picked [fantasy]",
+          "condition": "state['skill-choice-ret'] == \"fantasy\"",
+          "node": "set_genre_fn-copy"
+        },
+        {
+          "caption": "User picked [horror]",
+          "condition": "state['skill-choice-ret'] == \"horror\"",
+          "node": "set_genre_hr-copy"
+        },
+        {
+          "caption": "User picked [kinder]",
+          "condition": "state['skill-choice-ret'] == \"kinder\"",
+          "node": "set_genre_kn-copy"
+        },
+        {
+          "caption": "User picked [komödie]",
+          "condition": "state['skill-choice-ret'] == \"komödie\"",
+          "node": "set_genre_km-copy"
+        },
+        {
+          "caption": "User picked [krimi]",
+          "condition": "state['skill-choice-ret'] == \"krimi\"",
+          "node": "set_genre_kr-copy"
+        },
+        {
+          "caption": "User picked [liebe]",
+          "condition": "state['skill-choice-ret'] == \"liebe\"",
+          "node": "set_genre_li-copy"
+        },
+        {
+          "caption": "User picked [scifi]",
+          "condition": "state['skill-choice-ret'] == \"scifi\"",
+          "node": "set_genre_sc-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "aadb41a384",
+      "name": "yes_or_no",
+      "next": [
+        {
+          "condition": "true",
+          "node": "genre-today"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-eIl71t"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "830d50c35e",
+      "name": "super",
+      "next": [
+        {
+          "condition": "true",
+          "node": "ask-genre"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-3e7zqE"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "bfc0cc777d",
+      "name": "no-genre",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('time_for_film')",
+          "node": "schoen"
+        },
+        {
+          "condition": "event.nlu.intent.is('no_time_for_film')",
+          "node": "schoen-copy"
+        },
+        {
+          "condition": "event.nlu.intent.is('no_idea_time')",
+          "node": "schoen-copy-1"
+        },
+        {
+          "condition": "true",
+          "node": "fail_time"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-y2o0CN"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "05551f3d83",
+      "name": "last_film",
+      "next": [
+        {
+          "condition": "true",
+          "node": "endBot"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-6atz0~"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "skill-fa86a1",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "film_vorschlag",
+      "flow": "skills/choice-fa86a1.flow.json",
+      "next": [
+        {
+          "caption": "User picked [ja]",
+          "condition": "state['skill-choice-ret'] == \"ja\"",
+          "node": "super"
+        },
+        {
+          "caption": "User picked [nein]",
+          "condition": "state['skill-choice-ret'] == \"nein\"",
+          "node": "ask-me-film"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "cffb0a3d7a",
+      "name": "film_1",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('like_film')",
+          "node": "like_film"
+        },
+        {
+          "condition": "event.nlu.intent.is('yes')",
+          "node": "like_film"
+        },
+        {
+          "condition": "event.nlu.intent.is('other_film')",
+          "node": "get_other_film"
+        },
+        {
+          "condition": "event.nlu.intent.is('nogenre')",
+          "node": "get_other_film"
+        },
+        {
+          "condition": "true",
+          "node": "fail_like_film"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-lY4vVT"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "8444584f61",
+      "name": "film_2",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('like_film')",
+          "node": "like_film"
+        },
+        {
+          "condition": "event.nlu.intent.is('yes')",
+          "node": "like_film"
+        },
+        {
+          "condition": "event.nlu.intent.is('other_film')",
+          "node": "get_other_film"
+        },
+        {
+          "condition": "event.nlu.intent.is('nogenre')",
+          "node": "get_other_film"
+        },
+        {
+          "condition": "true",
+          "node": "fail_like_film2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-g7qw5q"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "9d2536ecc8",
+      "name": "schoen",
+      "next": [
+        {
+          "condition": "true",
+          "node": "feeling"
+        }
+      ],
+      "onEnter": [
+        "setTime {\"time\":\"time\",\"value\":\"much_time\"}",
+        "say #!builtin_text-oeGVEN"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "c245bf89a4",
+      "name": "schoen-copy",
+      "next": [
+        {
+          "condition": "true",
+          "node": "feeling"
+        }
+      ],
+      "onEnter": [
+        "setTime {\"time\":\"time\",\"value\":\"little_time\"}",
+        "say #!builtin_text-xYdFZo"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "a6893b7be8",
+      "name": "schoen-copy-1",
+      "next": [
+        {
+          "condition": "true",
+          "node": "feeling"
+        }
+      ],
+      "onEnter": [
+        "setTime {\"time\":\"time\",\"value\":\"both_time\"}",
+        "say #!builtin_text-oeGVEN"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "5f2a795dc7",
+      "name": "alone",
+      "next": [
+        {
+          "condition": "true",
+          "node": "get_film_1"
+        }
+      ],
+      "onEnter": [
+        "setWatchers {\"watcher\":\"watcher\",\"value\":\"alone\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "e29b784812",
+      "name": "film_others",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('film_alone')",
+          "node": "alone"
+        },
+        {
+          "condition": "event.nlu.intent.is('film_with_friends')",
+          "node": "friends"
+        },
+        {
+          "condition": "event.nlu.intent.is('film_with_fam')",
+          "node": "family"
+        },
+        {
+          "condition": "true",
+          "node": "fail_people"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Rl6lUH"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "f2c8a8b0bc",
+      "name": "friends",
+      "next": [
+        {
+          "condition": "true",
+          "node": "get_film_1"
+        }
+      ],
+      "onEnter": [
+        "setWatchers {\"watcher\":\"watcher\",\"value\":\"friends\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "8ef7f4a357",
+      "name": "family",
+      "next": [
+        {
+          "condition": "true",
+          "node": "get_film_1"
+        }
+      ],
+      "onEnter": [
+        "setWatchers {\"watcher\":\"watcher\",\"value\":\"family\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "5033dcad62",
+      "name": "endBot",
+      "next": [],
+      "onEnter": [],
+      "onReceive": null
+    },
+    {
+      "id": "3f69e6b17d",
+      "name": "good",
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_others"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-RU5teJ"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "f41a011c52",
+      "name": "bad",
+      "next": [
+        {
+          "condition": "true",
+          "node": "film_others"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-70wvO~"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "cf6a4f0545",
+      "name": "feeling",
+      "next": [
+        {
+          "condition": "event.nlu.intent.is('feeling_good')",
+          "node": "good"
+        },
+        {
+          "condition": "event.nlu.intent.is('feeling_bad')",
+          "node": "bad"
+        },
+        {
+          "condition": "true",
+          "node": "film_others"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-bqegsT"
+      ],
+      "onReceive": []
+    },
+    {
+      "id": "1149fe3fbc",
+      "name": "get_film_1",
+      "next": [
+        {
+          "condition": "state.noFilm == true",
+          "node": "noFilm"
+        },
+        {
+          "condition": "true",
+          "node": "film_1"
+        }
+      ],
+      "onEnter": [
+        "getFilm {\"title\":\"title\",\"summary\":\"summary\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "9e3754f5b0",
+      "name": "noFilm",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-JnGzjZ"
+      ],
+      "onReceive": null
+    }
+  ]
+}

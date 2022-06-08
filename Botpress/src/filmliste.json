@@ -1,0 +1,92 @@
+[
+  {
+    "genre": "action",
+    "titel_1": "Tango & Cash",
+    "summary_1": "In Tango & Cash ziehen die beiden gleichnamigen Cops, gespielt von Sylvester Stallone und Kurt Russell, gemeinsam einen Drogenboss zur Rechenschaft.",
+    "titel_2": "Crank",
+    "summary_2": "Um sich selbst am Leben zu erhalten, inszeniert Jason Statham in Crank die waghalsigsten Stunts. Was lebensmüde scheint, ist für ihn lebensnotwendig.",
+    "titel_3": "White House Down",
+    "summary_3": "In Roland Emmerichs Actiondrama White House Down greifen Terroristen das Weiße Haus an, und nur Channing Tatum kann US-Präsident Jamie Foxx beschützen."
+  },
+  {
+    "genre": "doku",
+    "titel_1": "Wovon träumt das Internet?",
+    "summary_1": "In Wovon träumt das Internet? wirft Werner Herzog einen Blick auf den Einfluss, den die weltweite Vernetzung in kürzester Zeit auf die Gesellschaft unseres Planeten genommen hat.",
+    "titel_2": "Banksy - Exit Through the Gift Shop",
+    "summary_2": "In Banksy - Exit Through the Gift Shop möchte der Filmemacher Thierry Guetta eine Reportage über den Street-Art-Künstler Banksy drehen, doch der dreht den Spieß um.",
+    "titel_3": "Scientology - Ein Glaubensgefängnis",
+    "summary_3": "In der HBO-Dokumentation Scientology - Ein Glaubensgefängnis gewährt Alex Gibney einen Einblick hinter die Kulissen und in die Arbeitsweise von Scientology."
+  },
+  {
+    "genre": "drama",
+    "titel_1": "Léon - der Profi",
+    "summary_1": "Nachdem Jean Reno als professioneller Auftragskiller Leon die zwölfjährige Natalie Portman vor der Ermordung rettet, will sie sein Lehrling werden.",
+    "titel_2": "Memento",
+    "summary_2": "Um dem Mord an seiner Frau auf den Grund zu gehen, versucht Guy Pearce verzweifelt sich so weit zurückzuerinnern wie möglich. Nicht leicht, wenn man unter chronischem Gedächtnisverlust leidet.",
+    "titel_3": "Colonia Dignidad",
+    "summary_3": "Colonia Dignidad erzählt die Geschichte einer Frau, die versucht ihren Mann aus einer Sekte zu befreien. Der Film mit Emma Watson und Daniel Brühl in den Hauptrollen basiert auf wahren Gegebenheiten."
+  },
+  {
+    "genre": "fantasy",
+    "titel_1": "Mr. Nobody",
+    "summary_1": "Jared Leto ist Mr. Nobody und lebt nach der Devise, dass alles möglich ist, solange man sich nur nicht entscheidet. Als greiser Mann durchspielt er Szenarien, in denen sein Leben anders verlaufen wäre.",
+    "titel_2": "Donnie Darko",
+    "summary_2": "Mit Donnie Darko schuf Regiedebütant Richard Kelly einen modernen Klassiker des Mysterythrillers. Jake Gyllenhaal überzeugt als Teenager, dem ein humanoider Hase erscheint und der den Weltuntergang verkündet.",
+    "titel_3": "Brazil",
+    "summary_3": "Nach Ex-Monty-Python-Mitglied Terry Gilliams Vorstellung ist die Welt von morgen ein dystopischer und zynischer bürokratischer Staatsapparat: Willkommen in Brazil!"
+  },
+  {
+    "genre": "horror",
+    "titel_1": "Mandy",
+    "summary_1": "Nachdem Mandy, die Frau von Red Miller, im Jahr 1983 von einer religiösen Sekte geschlachtet wurde, macht sich der Mann auf die Suche nach den Tätern, um ihnen ihre gerechte Strafe zuzuführen.",
+    "titel_2": "Revenge",
+    "summary_2": "Bevor Richard mit seinen zwei Freunden den jährlichen Jagdausflug beginnen möchte, nimmt er seine Affaire Jen mit in sein abgelegenes Luxushaus, um dort eine heiße Nacht zu verbringen. Doch Richards schäbige Freunde tauchen bereits verfrüht auf und so muss sich...",
+    "titel_3": "The Thing",
+    "summary_3": "Ein Forscherteam untersucht gemeinsam mit der Paläontologin Kate Lloyd ein abgestürztes Raumschiff in der Antarktis und entdeckt darin ein eingefrorenes Monster. Um es untersuchen zu können lassen sie es auftauen, doch als das Eis endlich ganz geschmolzen ist müssen sie..."
+  },
+  {
+    "genre": "kinderfilm",
+    "titel_1": "Findet Nemo",
+    "summary_1": "In Findet Nemo wird die Geschichte des Clownfisches Marlin erzählt, der seinen Sohn Nemo verliert und sich daraufhin mutig auf dessen Suche macht.",
+    "titel_2": "The Lego Movie",
+    "summary_2": "The Lego Movie ist der erste Auftritt der Lego-Figuren in Spielfilmlänge. Das Animationsabenteuer erzählt die Geschichte einer einfachen Figur, die aufgrund eines Missverständnisses über sich hinauswachsen muss.",
+    "titel_3": "Coco",
+    "summary_3": "Im oscarprämierten Pixar-Animationsfilm Coco deckt ein Junge am mexikanischen Tag der Toten ein uraltes Familiengeheimnis auf, indem er seine Verwandten im Jenseits besuchen geht."
+  },
+  {
+    "genre": "komödie",
+    "titel_1": "Logan Lucky",
+    "summary_1": "In Steven Soderberghs Heist-Komödie Logan Lucky versuchen Channing Tatum und Adam Driver als ungleiche Brüder bei einem NASCAR-Rennen ein kriminelles Ding durchzuziehen.",
+    "titel_2": "Ziemlich beste Freunde",
+    "summary_2": "In dem französischen Überraschungserfolg Ziemlich beste Freunde engagiert ein gelähmter Aristokrat einen unkonventionellen Pfleger aus einem Problemviertel.",
+    "titel_3": "Das Leben des Brian",
+    "summary_3": "In Monty Pythons Satire Das Leben des Brian wird Jesus Krippen-Nachbar irrtümlich für den Messias gehalten. Für die Volksfront von Judäa soll er die Römer vertreiben."
+  },
+  {
+    "genre": "krimi",
+    "titel_1": "96 Hours - Taken",
+    "summary_1": "Als seine Tochter im Ausland entführt wird, greift Liam Neeson in 96 Hours selbst zur Waffe, um die 17-Jährige aus den Fängen der Menschenhändler zu befreien.",
+    "titel_2": "The Town - Stadt ohne Gnade",
+    "summary_2": "Ben Affleck verdingt sich unter eigener Regie als Bankräuber - und das ganz gut. Bis er sich in die Zeugin Rebecca Hall verliebt. Seine Partner sehen dies verständlicherweise nicht gerne.",
+    "titel_3": "Gefährliche Brandung",
+    "summary_3": "In Kathryn Bigelows Gefährliche Brandung freundet sich FBI-Agent Keanu Reeves mit Surfer Patrick Swayze an, um dessen maskierten Bankräubern das Handwerk zu legen."
+  },
+  {
+    "genre": "liebesfilm",
+    "titel_1": "Charade",
+    "summary_1": "In Charade suchen Audrey Hepburn und Cary Grant in Paris nach einem verborgenen Schatz aus dem zweiten Weltkrieg hinter dem auch skurpellose Ex-Soldaten her sind. Doch in Charade ist niemand der der er zu sein Vorgibt.",
+    "titel_2": "Wie ein einziger Tag",
+    "summary_2": "Im Liebesfilm Wie ein einziger Tag versucht der leidenschaftliche, aber arme Ryan Gosling das Herz von Rachel McAdams zu gewinnen, obwohl sie einer sehr reichen Familie angehört.",
+    "titel_3": "Love & Friendship",
+    "summary_3": "Basierend auf der Novelle Lady Susan von Jane Austen entfaltet Love & Friendship die Geschichte einer Witwe die nach zwei reichen Ehemännern sucht: einen für sich und einen für ihre Tochter."
+  },
+  {
+    "genre": "science-fiction",
+    "titel_1": "Men in Black",
+    "summary_1": "Die Aliens sind unter uns. Schon längst. Und es ist an den Men in Black dafür zu sorgen, dass die Menschen nichts von ihrer Anwesenheit merken. Agent Will Smith und Agent Tommy Lee Jones sind die Besten dieser Men in Black.",
+    "titel_2": "Inception",
+    "summary_2": "Inception ist Christopher Nolans verschlungener Psycho-Thriller um Cyber-Diebe, die in die Träume ihrer Opfer eindringen, um dort Ideen zu stehlen - der neue Ideen einzupflanzen.",
+    "titel_3": "Ex Machina",
+    "summary_3": "Im Science-Fiction-Thriller Ex Machina verliebt sich Programmierer Domhnall Gleeson in eine künstlich erschaffene Frau."
+  }
+]

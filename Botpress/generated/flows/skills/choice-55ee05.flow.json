@@ -1,0 +1,117 @@
+{
+  "version": "0.1",
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-V5a7fn",
+    "keywords": {
+      "action": [
+        "action"
+      ],
+      "doku": [
+        "doku",
+        "Doku"
+      ],
+      "drama": [
+        "drama",
+        "Drama"
+      ],
+      "fantasy": [
+        "fantasy",
+        "Fantasy"
+      ],
+      "horror": [
+        "horror",
+        "Horror"
+      ],
+      "kinder": [
+        "kinder",
+        "Kinderfilm"
+      ],
+      "komödie": [
+        "komödie",
+        "Komödie"
+      ],
+      "krimi": [
+        "krimi",
+        "Krimi"
+      ],
+      "liebe": [
+        "liebe",
+        "Liebesfilm"
+      ],
+      "scifi": [
+        "scifi",
+        "Science-Fiction"
+      ]
+    },
+    "config": {
+      "invalidText": "Ich habe dich leider nicht verstanden... \nUm deinen Filmgeschmack besser kennenzulernen, kannst du mir jetzt gerne sagen, welches der Genres du am liebsten magst oder zuletzt gesehen hast."
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-V5a7fn {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "480058",
+      "onReceive": null
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-V5a7fn\",\"keywords\":{\"action\":[\"action\"],\"doku\":[\"doku\",\"Doku\"],\"drama\":[\"drama\",\"Drama\"],\"fantasy\":[\"fantasy\",\"Fantasy\"],\"horror\":[\"horror\",\"Horror\"],\"kinder\":[\"kinder\",\"Kinderfilm\"],\"komödie\":[\"komödie\",\"Komödie\"],\"krimi\":[\"krimi\",\"Krimi\"],\"liebe\":[\"liebe\",\"Liebesfilm\"],\"scifi\":[\"scifi\",\"Science-Fiction\"]},\"config\":{\"invalidText\":\"Ich habe dich leider nicht verstanden... \\nUm deinen Filmgeschmack besser kennenzulernen, kannst du mir jetzt gerne sagen, welches der Genres du am liebsten magst oder zuletzt gesehen hast.\"}}"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "id": "167537",
+      "onEnter": []
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "__skill-choice-invalid-inc"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-invalid-count'] <= 3",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "731073",
+      "onReceive": null
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-V5a7fn {\"text\":\"Ich habe dich leider nicht verstanden... \\nUm deinen Filmgeschmack besser kennenzulernen, kannst du mir jetzt gerne sagen, welches der Genres du am liebsten magst oder zuletzt gesehen hast.\",\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "288856",
+      "onReceive": null
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "version": "0.1",
+  "startNode": "entry",
+  "skillData": {
+    "contentId": "builtin_single-choice-002EMT",
+    "keywords": {
+      "action": [
+        "action",
+        "Action"
+      ],
+      "doku": [
+        "doku",
+        "Doku"
+      ],
+      "drama": [
+        "drama",
+        "Drama"
+      ],
+      "fantasy": [
+        "fantasy",
+        "Fantasy"
+      ],
+      "horror": [
+        "horror",
+        "Horror"
+      ],
+      "kinder": [
+        "kinder",
+        "Kinderfilm"
+      ],
+      "komödie": [
+        "komödie",
+        "Komödie"
+      ],
+      "krimi": [
+        "krimi",
+        "Krimi"
+      ],
+      "liebe": [
+        "liebe",
+        "Liebesfilm"
+      ],
+      "scifi": [
+        "scifi",
+        "Science-Fiction"
+      ]
+    },
+    "config": {}
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-002EMT {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "546537",
+      "onReceive": null
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "__skill-choice-parse {\"contentId\":\"builtin_single-choice-002EMT\",\"keywords\":{\"action\":[\"action\",\"Action\"],\"doku\":[\"doku\",\"Doku\"],\"drama\":[\"drama\",\"Drama\"],\"fantasy\":[\"fantasy\",\"Fantasy\"],\"horror\":[\"horror\",\"Horror\"],\"kinder\":[\"kinder\",\"Kinderfilm\"],\"komödie\":[\"komödie\",\"Komödie\"],\"krimi\":[\"krimi\",\"Krimi\"],\"liebe\":[\"liebe\",\"Liebesfilm\"],\"scifi\":[\"scifi\",\"Science-Fiction\"]},\"config\":{}}"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-valid'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "id": "551378",
+      "onEnter": []
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "__skill-choice-invalid-inc"
+      ],
+      "next": [
+        {
+          "condition": "state['skill-choice-invalid-count'] <= 3",
+          "node": "sorry"
+        },
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "614647",
+      "onReceive": null
+    },
+    {
+      "name": "sorry",
+      "onEnter": [
+        "say #!builtin_single-choice-002EMT {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "323698",
+      "onReceive": null
+    }
+  ]
+}
